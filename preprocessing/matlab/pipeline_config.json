@@ -1,0 +1,71 @@
+{
+  "sampling": {
+    "processing_hz": 500,
+    "output_hz": 400,
+    "beat_pre_samples": 240,
+    "beat_post_samples": 359,
+    "beat_samples": 600,
+    "zero_padding_each_side": 16,
+    "output_samples_without_padding": 480,
+    "output_samples": 512,
+    "r_index_500_matlab": 241,
+    "r_index_output_matlab": 209
+  },
+  "source_padding": {
+    "trim_exact_zero_edges": true,
+    "minimum_edge_run_samples": 80,
+    "minimum_remaining_seconds": 2.5
+  },
+  "filters": {
+    "detection_order": 3,
+    "detection_low_hz": 5.0,
+    "detection_high_hz": 40.0,
+    "detection_energy_window_ms": 80,
+    "baseline_highpass_order": 3,
+    "baseline_highpass_hz": 0.5,
+    "final_lowpass_order": 3,
+    "final_high_hz": 100.0,
+    "notch_hz": 60.0,
+    "notch_quality_factor": 30.0
+  },
+  "signal_qc": {
+    "minimum_duration_seconds": 2.5,
+    "near_zero_absolute_millivolts": 0.001,
+    "minimum_standard_deviation_millivolts": 0.005,
+    "minimum_robust_peak_to_peak_millivolts": 0.05,
+    "maximum_robust_peak_to_peak_millivolts": 20.0,
+    "maximum_centered_absolute_millivolts": 15.0,
+    "maximum_extreme_value_fraction": 0.02,
+    "baseline_window_seconds": 0.8,
+    "maximum_baseline_to_ecg_ratio": 3.0,
+    "maximum_high_frequency_noise_ratio": 0.8,
+    "robust_low_percentile": 0.5,
+    "robust_high_percentile": 99.5
+  },
+  "r_detection": {
+    "minimum_bpm": 25,
+    "maximum_bpm": 240,
+    "energy_mad_multiplier": 3.0,
+    "fallback_energy_percentile": 85.0,
+    "local_refine_ms": 90,
+    "minimum_detected_beats": 2,
+    "maximum_detected_beats": 80
+  },
+  "beat_qc": {
+    "minimum_candidate_beats": 2,
+    "minimum_retained_beats": 2,
+    "minimum_beat_standard_deviation_millivolts": 0.005,
+    "minimum_beat_peak_to_peak_millivolts": 0.05,
+    "maximum_beat_peak_to_peak_millivolts": 20.0,
+    "minimum_amplitude_ratio": 0.3,
+    "maximum_amplitude_ratio": 3.0,
+    "minimum_initial_full_correlation": 0.6,
+    "minimum_initial_qrs_correlation": 0.7,
+    "minimum_dominant_full_correlation": 0.65,
+    "minimum_dominant_qrs_correlation": 0.8,
+    "qrs_half_window_ms": 110,
+    "median_r_recheck_half_window_ms": 80,
+    "maximum_median_r_correction_samples": 20,
+    "maximum_r_correction_iterations": 2
+  }
+}
