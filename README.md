@@ -10,5 +10,3 @@ Core Adaptive-global model, MATLAB preprocessing and Python inference utilities.
 
 - [Usage and preprocessing guide](docs/USAGE.md)
 - [Source attribution and licensing notes](NOTICE.md)
-
-Model weights are not included. See the usage guide for checkpoint conversion and inference.
