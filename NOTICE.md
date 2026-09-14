@@ -1,5 +1,5 @@
-# 来源与许可
+# Attribution and licensing
 
-核心代码抽取自作者 STAGE `main-ii-v1.py`（SHA-256：`e6adc2cedaed4d570a24744da1812d42e24b5db58af779c000dada40e1223d30`），仅保留 Adaptive-global。卷积骨干原注明参考 `konspatl/vae_scan` 的 `vaescan/models.py / simple_cnn_*_beat`，保留此来源声明。MATLAB 核心来自作者 `matlab-ii` 主预处理流程。
+The core code was extracted from the author's STAGE `main-ii-v1.py` (SHA-256: `e6adc2cedaed4d570a24744da1812d42e24b5db58af779c000dada40e1223d30`), retaining only Adaptive-global. The convolutional backbone originally acknowledged `konspatl/vae_scan`, specifically `vaescan/models.py / simple_cnn_*_beat`; that attribution is retained here. The MATLAB core comes from the author's main `matlab-ii` preprocessing pipeline.
 
-发布前请确认代码版权、上游许可并补充 LICENSE。本包未替作者指定许可证。 `examples/mimic-local/` 内的 MIMIC 波形及衍生图不属于可直接公开再分发的代码内容，应保留在本地，除非另有明确授权。
+Code ownership and upstream licensing must be confirmed before adding a LICENSE file. This package does not assign a license on the author's behalf. MIMIC waveforms and derived plots in `examples/mimic-local/` are not part of the code available for public redistribution and must remain local unless separately authorized.
